@@ -18,20 +18,22 @@
 </head>
 <body>
 
-
+	<script>
+	  document.body.className = 'fade';
+	</script>
 
 
 	<section class="jumbotron text-center">
 
 		<h1 id="bienvenue">Bienvenue!</h1>
 		<div class="container">
-			<p id="intro">
+			<p class="intro">
 				Je m’appelle Ashleigh et j’ai créé ce site-web pour exposer mon motivation pour suivre la formation de développement web avec BeCode à Bruxelles.
 			</p>
-			<p>
+			<p class="intro">
 				Dans les sections ci-dessous, vous allez découvrir mes motivations, pourquoi je suis un bon choix pour ce cours, et finalement un peu plus de moi-même.
 			</p>
-			<p>
+			<p class="intro">
 				Vous pouvez aussi trouvez mes détails de contact en footer, et des liens aux mes profils de LinkedIn et Github en navigation ci-dessous. 
 		</p>
 		</div>
@@ -50,19 +52,19 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav nav-fill w-100">
 			      <li class="nav-item">
-			        <a class="nav-link active" href="#">Motivation</a>
+			        <a class="nav-link active" href="#motivation">Motivation</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link active" href="#">Pourquoi moi?</a>
+			        <a class="nav-link active" href="#pourquoiMoi">Pourquoi moi?</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link active" href="#">Plus de moi-même</a>
+			        <a class="nav-link active" href="#aboutMe">Plus de moi-même</a>
 			      </li>
 			      <li class="nav-item">
 			      	<a class="nav-link" href="https://www.linkedin.com/in/ashleigh-templeton-68339a127/"><i class="fab fa-linkedin"></i></a>
 			      </li>
 			      <li>
-			      	<a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+			      	<a class="nav-link" href="https://github.com/AshleighT2020"><i class="fab fa-github"></i></a>
 				  </li>
 
 
@@ -93,8 +95,8 @@
 	</section>
 
 
-	<div class="container">
-		<h2>Motivation : l'histoire bref de moi et développement web</h2>
+	<div class="container" id="motivation">
+		<h2>Motivation</h2>
 		<p>Avant 2019, je ne jamais imaginais pas que je serais web développeuse. J’avais la chance de travailler en communication comme responsable du contenu web et j’ai troué les outils limitant. Je voulais faire des améliorations et comme ça j’ai découvrir le développement web.
 		<br>
 		<br>
@@ -106,9 +108,11 @@
 		<br>
 		C'est pourquoi je souhaite rejoindre la formation Web Development à BeCode.
 		</p>
+		<br>
+		<hr>
 	</div>
 
-	<div class="container">
+	<div class="container" id="pourquoiMoi">
 		<h2>Pourquoi choisir moi?</h2>
 		<p>Je suis motivé, enthousiaste et toujours désireux d'apprendre. Par example, j’ai établi ce site-web avec la base des connaissances acquises lors des cours suivis sur Solo Learn ainsi q’un cours supplémentaire de Bootstrap 4.
 		<br>
@@ -117,13 +121,12 @@
 		<br>
 		<br>
 		Cela me permet de m'adapter facilement à tout nouvel environnement et de bien communiquer avec les clients. Où de nombreux programmeurs peuvent avoir du mal à bien communiquer leur message avec les clients, je peux aider à former le lien entre le client et mon équipe à se comprendre, à gagner du temps dans la communication, à réduire les erreurs et à produire des produits de qualité selon les spécifications du client.
-		<br>
-		<br>
-
 		</p>
+		<br>
+		<hr>
 	</div>
 
-	<div class="container">
+	<div class="container" id="aboutMe">
 		<h2>Plus de moi-même</h2>
 
 		<div class="container">
@@ -140,7 +143,7 @@
 		    <div class="col col-sm-12 col-md-6">
 		      <h4>Je parle...</h4>
 		      <br>
-		      <table class="table table-hover">
+		      <table class="table table-hover table-borderless">
 				  <thead>
 				    <tr>
 				      <th scope="col">Langue</th>
@@ -181,13 +184,13 @@
 		  <br>
 		  <div class="row">
 		    <div class="col col-sm-12 col-md-6">
-		     <h4>Two Steps From Hell ont la meilleur musique</h4>
+		     <h4>J'aime la musique de Two Steps From Hell</h4>
 		       <br>
-		       	<iframe width="300" height="169" src="https://www.youtube.com/embed/n-Dh3ftkRAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		       	<iframe width="480" height="349" src="https://www.youtube.com/embed/n-Dh3ftkRAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 		  
 		    <div class="col col-sm-12 col-md-6">
-		    	 <h4>J'aime voyager</h4>
+		    	 <h4>Je suis voyageuse</h4>
 		      <br>
 		      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				  <div class="carousel-inner">
@@ -267,15 +270,6 @@
 		    </div>
 		  </div>
 
-		  <div class="row">
-		    <div class="col col-sm-12">
-		    	<h4>Je suis gamer</h4>
-
-
-		    </div>
-		  </div>
-
-
 
 		</div>
 	
@@ -298,7 +292,7 @@
 	  	  	</form>
 	  	 </div>
 	 <br> <br> <br> 
-	 <br> <br> <br> 
+	 <br> 
 
 
 
@@ -328,7 +322,11 @@
 
 
 
-
+	<script>
+	  document.addEventListener("DOMContentLoaded", function(e) {
+	    document.body.className = '';
+	  });
+	</script>
 
 
 

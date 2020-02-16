@@ -13,6 +13,13 @@ body {
      font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
      text-align: center;
      color: white;
+     opacity: 1;
+  	 transition: 1s opacity;
+}
+
+body.fade {
+    opacity: 0;
+    transition: none;
 }
 
 .jumbotron {
@@ -95,15 +102,27 @@ h4 {
 }
 
 p {
-	font-size: 1.13em;
+	font-size: 1.2em;
 	padding-left: 60px;
 	padding-right: 60px;
 	text-align: center
 }
 
+.intro {
+	font-size: 1.3em;
+	padding-left: 175px;
+	padding-right: 175px;
+	text-align: center
+}
+
+hr {
+  border: 0;
+  border-top: 3px solid rgba(88, 195, 245, 0.5);
+}
+
 #cats {
 	width: 400px;
-	border-radius: 10%;
+	border-radius: 5%;
 	box-shadow: 1.5px 1.5px 5px #263672;
 }
 
@@ -117,9 +136,12 @@ p {
 	height: 350px;
 }
 
+/*
 .table {
 	margin-left: 30px;
+	margin-right: 30px
 }
+*/
 
 .btn {
 	margin: 10px;
