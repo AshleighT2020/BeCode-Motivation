@@ -1,0 +1,169 @@
+
+body {
+     margin: 0;
+     width: 100%;
+     background-image: linear-gradient(to right, #263672, #284886, #295b99, #296ead, #2b81bf, #2b81bf, #2b81bf, #2b81bf, #296ead, #295b99, #284886, #263672);
+
+	 /*
+     background-image: url('D:/Documents/Coding/About me/beanstalk-dark.png');
+ 	 background-color: #007EC3;     
+     background-repeat: repeat;
+     background-size: auto;
+     */
+     font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     text-align: center;
+     color: white;
+}
+
+.jumbotron {
+	 background: url('D:/Documents/Coding/About me/back5.jpg');
+	 background-size: cover; 
+	 background-position: center;
+
+}
+
+#picMe {
+	width: 185px;
+	margin: 20px;
+	border-style: solid;
+	border-color: #238AC7;
+	border-radius: 50%;
+	border-width: 5px;
+}
+
+
+.navbar {
+	width: 100%;
+	background-color: rgba(34, 80, 142, 0.5);
+	font-size: 1.2em;
+	border-top: 2px;
+
+}
+.navbar-nav {
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar-brand {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.nav-link {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+i {
+    font-size: 30px;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,255,203);
+} 
+
+
+.fa-dragon {
+	margin-right: 25px;
+}
+
+.fa-linkedin {
+ /* background: #007bb5;   blue background not needed with current image */
+  color: white;
+}
+
+
+.fa-github {
+	color: white;
+
+}
+
+h1 {
+	font-size: 4em;
+	padding: 25px;
+	font-style: italic;
+}
+
+h2	{
+	font-size: 2.5em;
+	padding: 20px;
+	font-style: italic;
+}
+
+h4 {
+	padding: 15px;
+}
+
+p {
+	font-size: 1.13em;
+	padding-left: 60px;
+	padding-right: 60px;
+	text-align: center
+}
+
+#cats {
+	width: 400px;
+	border-radius: 10%;
+	box-shadow: 1.5px 1.5px 5px #263672;
+}
+
+#caption {
+	font-size: 1em;
+	font-style: italic;
+	padding-top: 7px;
+}
+
+.d-block {
+	height: 350px;
+}
+
+.table {
+	margin-left: 30px;
+}
+
+.btn {
+	margin: 10px;
+	border-width: 0.5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1.3em;
+	font-style: bold;
+}
+
+#btn-oui {
+	box-shadow: 1.5px 1.5px 5px #0c6607;
+}
+
+#btn-non {
+	box-shadow: 1.5px 1.5px 5px #093a8f;
+
+}
+
+
+#message {
+	font-size: 1.3em;
+	font-style: italic;
+	display: absolute;
+	width: 20%;
+}
+
+#btn-soumettre {
+	box-shadow: 1.5px 1.5px 5px #093a8f;
+
+}
+
+.footer  {
+	padding: 10px;
+	background-color: #263672;
+	color: white;
+	font-size: 1.2em;
+	font-style: bold;
+	text-align: center;
+}
+
+#footer-text {
+	padding-right: 50px;
+	padding-left: 50px;
+}
