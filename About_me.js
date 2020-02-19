@@ -1,7 +1,5 @@
 
 
-
-
 var messageDisplay = document.querySelector("#message");
 var inc=0;
 
@@ -18,6 +16,10 @@ function pollNo() {
 
 }
 
-function submit() {
-	alert = "Votre commentaire a été soumis."
-}
+function submitComm()
+{
+     alert("Votre commentaire a été soumis.")
+     document.getElementById('feedback').style.display = "none";
+     document.feedbackForm.submitComm()
+     // var result = document.getElementById("feedbackForm").value;
+} 
