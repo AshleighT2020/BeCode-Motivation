@@ -16,34 +16,17 @@
 
 	<title>Ashleigh Templeton</title>
 </head>
+
 <body>
 
 	<script>
 	  document.body.className = 'fade';
 	</script>
 
-
-	<section class="jumbotron text-center">
-
-		<h1 id="bienvenue">Bienvenue!</h1>
-		<div class="container">
-			<p class="intro">
-				Je m’appelle Ashleigh et j’ai créé ce site-web pour exposer mon motivation pour suivre la formation de développement web avec BeCode à Bruxelles.
-			</p>
-			<p class="intro">
-				Dans les sections ci-dessous, vous allez découvrir mes motivations, pourquoi je suis un bon choix pour ce cours, et finalement un peu plus de moi-même.
-			</p>
-			<p class="intro">
-				Vous pouvez aussi trouvez mes détails de contact en footer, et des liens aux mes profils de LinkedIn et Github en navigation ci-dessous. 
-		</p>
-		</div>
-		<img src="me.jpg"  id="picMe" alt="Thats me!">	<!--remember to upload the images online and update the link! -->
-		<br>
-
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark"> 
+		<nav class="navbar navbar-expand-lg navbar-dark" id="navbar"> 
 		  <div class="container">
-			  <a class="navbar-brand" href="#bienvenue"><i class="fas fa-dragon"></i>Ashleigh Templeton</a> 
+			  <a class="navbar-brand" href="#home"><i class="fas fa-dragon"></i>Ashleigh Templeton</a> 
 			  <!-- dragon: https://fontawesome.com/icons/dragon?style=solid -->
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
@@ -59,6 +42,9 @@
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link active" href="#aboutMe">Plus de moi-même</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link active" href="#contact">Contact</a>
 			      </li>
 			      <li class="nav-item">
 			      	<a class="nav-link" href="https://www.linkedin.com/in/ashleigh-templeton-68339a127/"><i class="fab fa-linkedin"></i></a>
@@ -92,10 +78,30 @@
 		  </div>
 		</nav>
 
-	</section>
+		<h1 id="bienvenue">Bienvenue!</h1>
+		<div class="container">
+			<p class="intro">
+				Je m’appelle Ashleigh et j’ai créé ce site-web pour exposer mon motivation pour suivre la formation de développement web avec BeCode à Bruxelles.
+			</p>
+			<p class="intro">
+				Dans les sections ci-dessous, vous allez découvrir mes motivations, pourquoi je suis un bon choix pour ce cours, et finalement un peu plus de moi-même.
+			</p>
+			<p class="intro">
+				Vous pouvez aussi trouvez mes détails de contact en footer, et des liens aux mes profils de LinkedIn et Github en navigation ci-dessous. 
+			</p>
+			<img src="me.jpg"  id="picMe" alt="Thats me!">	<!--remember to upload the images online and update the link! -->
+			<br>
+			<hr>
+		</div>
+		
+
+	
 
 
-	<div class="container" id="motivation">
+
+	<div class="invis" id="motivation"></div>
+
+	<div class="container">
 		<h2>Motivation</h2>
 		<p>Avant 2019, je ne jamais imaginais pas que je serais web développeuse. J’avais la chance de travailler en communication comme responsable du contenu web et j’ai troué les outils limitant. Je voulais faire des améliorations et comme ça j’ai découvrir le développement web.
 		<br>
@@ -112,7 +118,9 @@
 		<hr>
 	</div>
 
-	<div class="container" id="pourquoiMoi">
+
+	<div class="invis" id="pourquoiMoi"></div>
+	<div class="container">
 		<h2>Pourquoi choisir moi?</h2>
 		<p>Je suis motivé, enthousiaste et toujours désireux d'apprendre. Par example, j’ai établi ce site-web avec la base des connaissances acquises lors des cours suivis sur Solo Learn ainsi q’un cours supplémentaire de Bootstrap 4.
 		<br>
@@ -126,7 +134,8 @@
 		<hr>
 	</div>
 
-	<div class="container" id="aboutMe">
+	<div class="invis" id="aboutMe"></div>
+	<div class="container">
 		<h2>Plus de moi-même</h2>
 
 		<div class="container">
@@ -269,12 +278,21 @@
 				</div>
 		    </div>
 		  </div>
+		  <br>
+		  <br>
+		</div>
 
+		<hr>
 
+		  <div class="invis" id="contact"></div>
+		<div class="container">
+			<h2>Contact</h2>
+			    <span><a id="contactText" href="tel:+32468478973">+32 468 478 973</a></span>
+				<br>
+				<span><a id="contactText" href="mailto:ashleigh_ann_templeton@hotmail.com">ashleigh_ann_templeton@hotmail.com<a></span>			
 		</div>
 	
-
-	 <br> <br> <br> 
+	 <br> <br> <br> <br>
 
 	 <h3>Aimez-vous cette page?</h3>
 		 <button onclick="pollYes()" type="button" class="btn btn-success btn-large" id="btn-oui">Oui</button>
@@ -283,11 +301,25 @@
 		 <span id="message"></span>
 		 <div class="container">
 		 	<div class="form-group" id="feedback" style="display:none;">
-		 		<h4>Voulez-vous laisser une commentaire?</h4>
-		 		<form id="feedbackForm">
+		 		<h4>Laisser une commentaire?</h4>
+		 		
+		 		<form action="mailto:ashleigh_ann_templeton@hotmail.com" method="post" enctype="text/plain" id="feedbackForm">
+					Nom:<br>
+					<input type="text" name="name"><br>
+					Commentaire:<br>
+					<textarea type="text" name="comment" rows="3" size="100" id="commentaire"></textarea>
+					<br>
+					<button onclick="submitComm()" type="submit" class="btn btn-info" id="btn-soumettre">Soumettre</button>
+					</form>
+
+
+
+
+		 		<!--<form action="mailto:ashleigh_ann_templeton@hotmail.com" id="feedbackForm">
 			       	<textarea class="form-control" rows="3" id="commentaire"></textarea>
-			    </form>
-	  		  		<button onclick="submitComm()" type="submit" class="btn btn-info" id="btn-soumettre">Soumettre</button>			  	
+			    <button onclick="submitComm()" type="submit" class="btn btn-info" id="btn-soumettre">Soumettre</button>
+			</form> -->
+	  		  					  	
 	  		  	</div>
 
 	  	  	
@@ -311,17 +343,7 @@
 	-->
 
 
-	<!-- Footer -->
-<footer class="page-footer bg-dark fixed-bottom">
 
-  <div class="footer">
-  	<span id="footer-text">+32 468 478 973</span>
-	<span id="footer-text"><a href="mailto:ashleigh_ann_templeton">ashleigh_ann_templeton@hotmail.com<a></span>
-	
-	
-  </div>
-  
-</footer>
 
 
 <!--
