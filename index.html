@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="About_me.css"/>
 
 	<meta charset="utf-8"> <!-- character set -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--functional & touch responsive on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--functional & touch responsive on mobile devices, although site is not configured fully to display correctly on mobile/ small devices -->
 
 	<!-- link to font awesome -->
 	<script src="https://kit.fontawesome.com/4966489e02.js" crossorigin="anonymous"></script>
@@ -18,21 +18,21 @@
 </head>
 
 <body>
-
+	<!--document faade in-->
 	<script>
 	  document.body.className = 'fade';
 	</script>
 
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark" id="navbar"> 
-		  <div class="container">
-			  <a class="navbar-brand" href="#home"><i class="fas fa-dragon"></i>Ashleigh Templeton</a> 
-			  <!-- dragon: https://fontawesome.com/icons/dragon?style=solid -->
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark" id="navbar"> 
+		<div class="container">
+			<a class="navbar-brand" href="#home"><i class="fas fa-dragon"></i>Ashleigh Templeton</a> 
+			<!-- dragon: https://fontawesome.com/icons/dragon?style=solid -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav nav-fill w-100">
 			      <li class="nav-item">
 			        <a class="nav-link active" href="#motivation">Motivation</a>
@@ -52,55 +52,30 @@
 			      <li>
 			      	<a class="nav-link" href="https://github.com/AshleighT2020"><i class="fab fa-github"></i></a>
 				  </li>
-
-
-			      <!--dropdown, not needed? 
-			      <li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Dropdown
-			        </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="#">Action</a>
-			          <a class="dropdown-item" href="#">Another action</a>
-			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="#">Something else here</a>
-			        </div>
-			      </li> 
-			       -->
-				<!-- search bar, not needed?
-			    </ul>
-			    <form class="form-inline my-2 my-lg-0">
-			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			    </form>
-			-->
 		  	</div>
-		  </div>
-		</nav>
-
-		<h1 id="bienvenue">Bienvenue!</h1>
-		<div class="container">
-			<p class="intro">
-				Je m’appelle Ashleigh et j’ai créé ce site-web pour exposer mon motivation pour suivre la formation de développement web avec BeCode à Bruxelles.
-			</p>
-			<p class="intro">
-				Dans les sections ci-dessous, vous allez découvrir mes motivations, pourquoi je suis un bon choix pour ce cours, et finalement un peu plus de moi-même.
-			</p>
-			<p class="intro">
-				Vous pouvez aussi trouvez mes détails de contact en footer, et des liens aux mes profils de LinkedIn et Github en navigation ci-dessous. 
-			</p>
-			<img src="me.jpg"  id="picMe" alt="Thats me!">	<!--remember to upload the images online and update the link! -->
-			<br>
-			<hr>
 		</div>
-		
+	</nav>
 
+	<div class="invis" id="home"></div> <!--invisible div: hack for navbar not to cover section titles-->
+	<h1 id="bienvenue">Bienvenue!</h1>
+	<div class="container">
+		<p class="intro">
+		Je m’appelle Ashleigh et j’ai créé ce site-web pour exposer mon motivation pour suivre la formation de développement web avec BeCode à Bruxelles.
+		</p>
+		<p class="intro">
+		Dans les sections ci-dessous, vous allez découvrir mes motivations, pourquoi je suis un bon choix pour ce cours, et finalement un peu plus de moi-même.
+		</p>
+		<p class="intro">
+		Vous pouvez aussi trouvez mes détails de contact en footer, et des liens aux mes profils de LinkedIn et Github en navigation ci-dessous. 
+		</p>
+		<img src="me.jpg"  id="picMe" alt="Thats me!">	
+
+		<br>
+		<hr>
 	
-
-
-
-	<div class="invis" id="motivation"></div>
-
+	</div>
+		
+	<div class="invis" id="motivation"></div> <!--invisible div: hack for navbar not to cover section titles-->
 	<div class="container">
 		<h2>Motivation</h2>
 		<p>Avant 2019, je ne jamais imaginais pas que je serais web développeuse. J’avais la chance de travailler en communication comme responsable du contenu web et j’ai troué les outils limitant. Je voulais faire des améliorations et comme ça j’ai découvrir le développement web.
@@ -114,12 +89,13 @@
 		<br>
 		C'est pourquoi je souhaite rejoindre la formation Web Development à BeCode.
 		</p>
+
 		<br>
 		<hr>
+
 	</div>
 
-
-	<div class="invis" id="pourquoiMoi"></div>
+	<div class="invis" id="pourquoiMoi"></div> <!--invisible div: hack for navbar not to cover section titles-->
 	<div class="container">
 		<h2>Pourquoi choisir moi?</h2>
 		<p>Je suis motivé, enthousiaste et toujours désireux d'apprendre. Par example, j’ai établi ce site-web avec la base des connaissances acquises lors des cours suivis sur Solo Learn ainsi q’un cours supplémentaire de Bootstrap 4.
@@ -130,28 +106,31 @@
 		<br>
 		Cela me permet de m'adapter facilement à tout nouvel environnement et de bien communiquer avec les clients. Où de nombreux programmeurs peuvent avoir du mal à bien communiquer leur message avec les clients, je peux aider à former le lien entre le client et mon équipe à se comprendre, à gagner du temps dans la communication, à réduire les erreurs et à produire des produits de qualité selon les spécifications du client.
 		</p>
+
 		<br>
 		<hr>
+
 	</div>
 
-	<div class="invis" id="aboutMe"></div>
+	<div class="invis" id="aboutMe"></div> <!--invisible div: hack for navbar not to cover section titles-->
 	<div class="container">
 		<h2>Plus de moi-même</h2>
 
 		<div class="container">
-
+		  <!--first row-->
 		  <div class="row">
+
 		    <div class="col col-md-12 col-lg-6">
 		      <h4>J'habite à Louvain avec mon copain et nos deux chats</h4>
-		      
 		      <img src="cats.jpg" id="cats">
 		      <br>
 		      <p id="caption">Ezio & Edi</p>
-		      
 		    </div>
+
 		    <div class="col col-md-12 col-lg-6">
 		      <h4>Je parle...</h4>
 		      <br>
+		      <!--language table-->
 		      <table class="table table-hover table-borderless">
 				  <thead>
 				    <tr>
@@ -186,11 +165,12 @@
 				    </tr>
 				  </tbody>
 			  </table>
-
 		    </div>
 		  </div>
-		  <br>
-		  <br>
+
+		  <br><br>
+		  
+		  <!--second row-->
 		  <div class="row">
 		    <div class="col col-md-12 col-lg-6">
 		     <h4>J'aime la musique de Two Steps From Hell</h4>
@@ -201,6 +181,7 @@
 		    <div class="col col-md-12 col-lg-6">
 		    	 <h4>Je suis voyageuse</h4>
 		      <br>
+		      <!--image slider-->
 		      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
@@ -267,6 +248,7 @@
 						</div>
 				    </div>
 				  </div>
+				  <!--slider arrow controls-->
 				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
@@ -278,13 +260,14 @@
 				</div>
 		    </div>
 		  </div>
-		  <br>
-		  <br>
+		  
+		  <br><br>
+		 
 		</div>
 
 		<hr>
 
-		  <div class="invis" id="contact"></div>
+		<div class="invis" id="contact"></div> <!--invisible div: hack for navbar not to cover section titles-->
 		<div class="container">
 			<h2>Contact</h2>
 			    <span><a id="contactText" href="tel:+32468478973">+32 468 478 973</a></span>
@@ -294,80 +277,39 @@
 	
 	 <br> <br> <br> <br>
 
+	 <!--feedback section-->
 	 <h3>Aimez-vous cette page?</h3>
 		 <button onclick="pollYes()" type="button" class="btn btn-success btn-large" id="btn-oui">Oui</button>
 		 <button onclick="pollNo()" type="button" class="btn btn-primary btn-large" id="btn-non">Non</button>
 		 <br>
+		 <!--form appearing after button click-->
 		 <span id="message"></span>
 		 <div class="container">
 		 	<div class="form-group" id="feedback" style="display:none;">
 		 		<h4>Laisser une commentaire?</h4>
-		 		
-		 		<form action="mailto:ashleigh_ann_templeton@hotmail.com" method="post" enctype="text/plain" id="feedbackForm">
-					Nom:<br>
-					<input type="text" name="name"><br>
-					Commentaire:<br>
-					<textarea type="text" name="comment" rows="3" size="100" id="commentaire"></textarea>
-					<br>
-					<button onclick="submitComm()" type="submit" class="btn btn-info" id="btn-soumettre">Soumettre</button>
+		 			<!--form results emailed to me-->
+		 			<form action="mailto:ashleigh_ann_templeton@hotmail.com" method="post" enctype="text/plain" id="feedbackForm">
+					Nom:
+						<br>
+						<input type="text" name="name"><br>
+						Commentaire:<br>
+						<textarea type="text" name="comment" rows="3" size="100" id="commentaire"></textarea>
+						<br>
+						<button onclick="submitComm()" type="submit" class="btn btn-info" id="btn-soumettre">Soumettre</button>
 					</form>
-
-
-
-
-		 		<!--<form action="mailto:ashleigh_ann_templeton@hotmail.com" id="feedbackForm">
-			       	<textarea class="form-control" rows="3" id="commentaire"></textarea>
-			    <button onclick="submitComm()" type="submit" class="btn btn-info" id="btn-soumettre">Soumettre</button>
-			</form> -->
-	  		  					  	
-	  		  	</div>
-
-	  	  	
+	  		</div>
 	  	 </div>
-	 <br> <br> <br> 
-	 <br> 
 
-
-
-	<!--
-		 <div class="container">
-		 	<form id="feedbackForm">
-			    <div class="form-group" id="feedback" style="display:none;">
-			    	<h4>Voulez-vous laisser une commentaire?</h4>
-				    <textarea class="form-control" rows="3" id="commentaire"></textarea>
-	  		  		<button onclick="submitComm()" type="submit" class="btn btn-info" id="btn-soumettre">Soumettre</button>			  	
-	  		  	</div>
-
-	  	  	</form>
-	  	 </div>
-	-->
-
-
-
-
-
-<!--
-	<footer class="footer mt-auto py-3">
-	  <div class="bg-dark">
-	    <span class="text-muted">+32 468 478 973</span>
-	    <span class="text-muted">ashleigh_ann_templeton@hotmail.com</span>
-	  </div>
-	</footer>
--->
-
-
-
+	 <br> <br> <br> <br>
+	  
+	 <!--js page fade in effect-->
 	<script>
 	  document.addEventListener("DOMContentLoaded", function(e) {
 	    document.body.className = '';
 	  });
 	</script>
 
-
-
-
 	<!-- links to boostrap (jquery, j.popper, js) js files) -->
-
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

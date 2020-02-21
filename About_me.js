@@ -1,4 +1,6 @@
 
+/*button and comment functions: on oui/non button click, the 'merci' message + comment div should appear. After soumettre button click, comment div should be hidden*/
+
 var messageDisplay = document.querySelector("#message");
 var inc=0;
 
@@ -10,15 +12,10 @@ function pollYes() {
 function pollNo() {
 	messageDisplay.textContent = "Merci pour votre réponse! ";
 	document.getElementById('feedback').style.display = "block";
-/*	inc=inc+1;
-    messageDisplay.textContent = "Merci pour votre réponse!               " + (inc) + " personnes sont accord."; */
-
 }
 
 function submitComm()
 {
-     //alert("Votre commentaire a été soumis.")
      document.getElementById('feedback').style.display = "none";
      document.feedbackForm.submitComm()
-     // var result = document.getElementById("feedbackForm").value;
 } 

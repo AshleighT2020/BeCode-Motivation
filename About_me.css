@@ -1,4 +1,5 @@
 
+/*smooth transition on page scrolling from link click*/
 html {
 	scroll-behavior: smooth;
 }
@@ -8,43 +9,20 @@ body {
      padding: 0px;
      width: 100%;
      background: url('back5.jpg');
-     /*background-image: linear-gradient(to right, #263672, #284886, #295b99, #296ead, #2b81bf, #2b81bf, #2b81bf, #2b81bf, #296ead, #295b99, #284886, #263672);
-     */
      background-attachment: fixed;
-	 /*
-     background-image: url('D:/Documents/Coding/About me/beanstalk-dark.png');
- 	 background-color: #007EC3;     
-     background-repeat: repeat;
-     background-size: auto;
-     */
      font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
      text-align: center;
-     color: white;
+     color: white;	
+     /*page fade in effect*/
      opacity: 1;
   	 transition: 1s opacity;
 }
 
+/*page fade in effect*/
 body.fade {
     opacity: 0;
     transition: none;
-}/*
-.jumbotron {
-	 /*background: url('back5.jpg'); *//*
-	 background-color: rgba(0, 0, 0, 0);
-	 background-size: cover; 
-	 background-position: center;
 }
-*/
-
-#picMe {
-	width: 185px;
-	margin: 30px;
-	border-style: solid;
-	border-color: #238AC7;
-	border-radius: 50%;
-	border-width: 5px;
-}
-
 
 .navbar {
 	width: 100%;
@@ -52,6 +30,7 @@ body.fade {
 	font-size: 1.2em;
 	border-top: 2px;
 	position: fixed;
+	/*making the nav on top of all elements, preventing overlap from headings, youtube, slider elements, etc.*/
 	z-index: 9999;
 }
 
@@ -70,44 +49,43 @@ body.fade {
 	font-weight: 500;
 }
 
-
 i {
     font-size: 30px;
 }
-
+/*hamburger*/
 .custom-toggler.navbar-toggler {
   border-color: rgb(255,255,203);
 } 
-
 
 .fa-dragon {
 	margin-right: 25px;
 }
 
 .fa-linkedin {
- /* background: #007bb5;   blue background not needed with current image */
+ /* background: #007bb5; LinkedIn blue not needed with current image */
   color: white;
 }
 
-
 .fa-github {
 	color: white;
-
 }
 
+/*Bienvenue heading*/
 h1 {
 	font-size: 4em;
-	padding: 50px;
+	padding: 45px;
 	padding-top: 140px;
 	font-style: italic;
 }
 
+/*section headings*/
 h2	{
 	font-size: 2.5em;
 	padding: 20px;
 	font-style: italic;
 }
 
+/*more about me section headings*/
 h4 {
 	padding: 15px;
 }
@@ -116,20 +94,32 @@ p {
 	font-size: 1.2em;
 	padding-left: 60px;
 	padding-right: 60px;
-	text-align: center
+	text-align: center;
+	text-shadow: 3px 3px 3px #093a8f;
 }
 
+/*Bienvenue intro text*/
 .intro {
 	font-size: 1.25em;
 	padding-left: 175px;
 	padding-right: 175px;
-	text-align: center
+	text-align: center;
+	text-shadow: 3px 3px 3px #093a8f;
 }
 
-
+/*invisible div so nav bar would not overlap section headings*/
 .invis	{
 	position: relative;
 	top: -70px;
+}
+
+#picMe {
+	width: 185px;
+	margin: 30px;
+	border-style: solid;
+	border-color: #238AC7;
+	border-radius: 50%;
+	border-width: 5px;
 }
 
 hr {
@@ -152,6 +142,7 @@ hr {
 	padding-top: 7px;
 }
 
+/*image slider size*/
 .d-block {
 	height: 350px;
 }
@@ -184,10 +175,9 @@ hr {
 
 #btn-non {
 	box-shadow: 1.5px 1.5px 5px #093a8f;
-
 }
 
-
+/*message & comment sections appearing after oui/non button click*/
 #message {
 	font-size: 1.3em;
 	font-style: italic;
@@ -216,13 +206,3 @@ input[type=text] {
 	box-shadow: 1.5px 1.5px 5px #093a8f;
 
 }
-/*
-.footer  {
-	padding: 8px;
-	background-color: #3c3c3c;
-	color: white;
-	font-size: 1.2em;
-	font-style: bold;
-	text-align: center;
-}
-*/
